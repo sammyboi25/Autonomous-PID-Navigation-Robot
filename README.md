@@ -8,18 +8,11 @@
 
 ## Overview
 
-This project is a compact ** PID controlled two-wheel differential-drive autonomous robot** with a passive caster wheel.
+A compact autonomous robot combining **PID heading control, gyroscope feedback, and color-based navigation**.
+The robot continuously corrects its heading through differential motor control and autonomously executes 90° turns based on navigation cards.
+Designed under tight mechanical constraints, it features **custom-made wheels** and experimentally calibrated color detection.
+The project integrates **mechanical design, embedded systems, sensor processing, and control theory** into a single autonomous platform.
 
-The robot uses an **MPU6050 gyroscope** to estimate its heading and a **TCS34725 RGB sensor** to detect colored navigation cards.
-
-Based on the detected color, the robot can continue straight, perform a 90° turn, or stop.
-
-|   Color   | Action            |
-| :-------: | ----------------- |
-|   🔴 Red  | Stop              |
-| 🟡 Yellow | Turn 90° Left     |
-|  🔵 Blue  | Turn 90° Right    |
-|   Other   | Continue Straight |
 
 ### Key Features
 
@@ -33,13 +26,25 @@ Based on the detected color, the robot can continue straight, perform a 90° tur
 
 ---
 
-## Robot
+## Robot Video
 
 https://github.com/user-attachments/assets/7f8da84f-6d9c-4864-beaf-307f05c705fd
 
 
 The robot uses two independently controlled drive wheels and a passive caster, forming a **differential-drive configuration**.
 
+---
+
+## Hardware
+
+* Raspberry Pi 5
+* MPU6050 IMU / Gyroscope
+* TCS34725 RGB Color Sensor
+* 2 × DC Gear Motors (TT motors)
+* Motor Driver DRV 8833
+* Custom-designed wheels
+* Power Bank 
+* Compact custom chassis
 ---
 
 ## System Architecture
@@ -72,16 +77,13 @@ Right Motor = Base Speed - PID Correction
 
 ---
 
-## Hardware
+|   Color   | Action            |
+| :-------: | ----------------- |
+|   🔴 Red  | Stop              |
+| 🟡 Yellow | Turn 90° Left     |
+|  🔵 Blue  | Turn 90° Right    |
+|   Other   | Continue Straight |
 
-* Raspberry Pi
-* MPU6050 IMU / Gyroscope
-* TCS34725 RGB Color Sensor
-* 2 × DC Gear Motors
-* Motor Driver
-* Custom-designed wheels
-* Battery
-* Compact custom chassis
 
 ### Custom Wheel Design
 
@@ -89,7 +91,7 @@ The robot had to fit inside a **very constrained compact enclosure**, making com
 
 The wheels were therefore designed and manufactured specifically for the robot.
 
-<img width="623" height="576" alt="image" src="https://github.com/user-attachments/assets/ed67cd29-06de-48c2-b472-20f161306318" />
+<img width="423" height="376" alt="image" src="https://github.com/user-attachments/assets/ed67cd29-06de-48c2-b472-20f161306318" />
 
 
 The custom wheels allowed the design to:
