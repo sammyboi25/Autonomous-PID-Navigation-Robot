@@ -8,7 +8,7 @@
 
 ## Overview
 
-This project is a compact **two-wheel differential-drive autonomous robot** with a passive caster wheel.
+This project is a compact ** PID controlled two-wheel differential-drive autonomous robot** with a passive caster wheel.
 
 The robot uses an **MPU6050 gyroscope** to estimate its heading and a **TCS34725 RGB sensor** to detect colored navigation cards.
 
@@ -35,20 +35,14 @@ Based on the detected color, the robot can continue straight, perform a 90° tur
 
 ## Robot
 
-<p align="center">
-  <img src="images/robot_front.jpg" width="48%">
-  <img src="images/robot_top.jpg" width="48%">
-</p>
+https://github.com/user-attachments/assets/7f8da84f-6d9c-4864-beaf-307f05c705fd
+
 
 The robot uses two independently controlled drive wheels and a passive caster, forming a **differential-drive configuration**.
 
 ---
 
 ## System Architecture
-
-<p align="center">
-  <img src="images/system_architecture.png" width="700">
-</p>
 
 The control loop is:
 
@@ -95,9 +89,8 @@ The robot had to fit inside a **very constrained compact enclosure**, making com
 
 The wheels were therefore designed and manufactured specifically for the robot.
 
-<p align="center">
-  <img src="images/custom_wheels.jpg" width="500">
-</p>
+<img width="623" height="576" alt="image" src="https://github.com/user-attachments/assets/ed67cd29-06de-48c2-b472-20f161306318" />
+
 
 The custom wheels allowed the design to:
 
