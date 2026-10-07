@@ -101,6 +101,10 @@ The custom wheels allowed the design to:
 * Interface correctly with the motors
 * Minimize unnecessary mechanical space
 
+**The Body of the robot** which was meant to slide into another outer dog body (required as per given task)
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/d5867720-385a-44dd-9830-6bb214c6d575" />
+
+
 This turned the wheel design into part of the mechanical engineering problem rather than simply selecting an off-the-shelf component.
 
 ---
